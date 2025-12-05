@@ -1,0 +1,14 @@
+
+material MIDTOWER
+{
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture MIDTOW.BMP
+			}
+		}
+	}
+}

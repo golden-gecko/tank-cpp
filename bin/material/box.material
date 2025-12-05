@@ -1,0 +1,17 @@
+
+material box
+{
+	technique
+	{
+		pass
+		{
+			ambient 0.5 0.5 0.5 0.2
+			diffuse 0.5 0.5 0.5 0.2
+
+			texture_unit
+			{
+				texture otresy.png
+			}
+		}
+	}
+}

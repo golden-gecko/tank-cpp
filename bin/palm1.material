@@ -1,0 +1,16 @@
+
+material palm1
+{
+	technique
+	{
+		pass
+		{
+			alpha_rejection greater 128
+
+			texture_unit
+			{
+				texture palm1.tga
+			}
+		}
+	}
+}

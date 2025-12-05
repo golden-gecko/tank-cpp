@@ -1,0 +1,14 @@
+
+material VillageBuilding2
+{
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture CityBuildingsNew.tga
+			}
+		}
+	}
+}

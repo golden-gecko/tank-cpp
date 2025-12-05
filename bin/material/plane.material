@@ -1,0 +1,19 @@
+
+material plane
+{
+	technique
+	{
+		pass
+		{
+			ambient 0.5 0.5 0.5 0.2
+			diffuse 0.5 0.5 0.5 0.2
+			scene_blend alpha_blend
+
+			texture_unit
+			{
+				scale 0.2 0.2
+				texture grid.png
+			}
+		}
+	}
+}

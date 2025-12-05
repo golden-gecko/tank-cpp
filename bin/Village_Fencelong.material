@@ -1,0 +1,14 @@
+
+material Village_Fencelong
+{
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture Doodads0.tga
+			}
+		}
+	}
+}

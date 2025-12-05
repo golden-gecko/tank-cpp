@@ -1,0 +1,15 @@
+#MAXMODEL ASCII
+# model: fx_ref 
+filedependancy Fx_Ref.max
+newmodel fx_ref 
+setsupermodel fx_ref NULL
+classification Effects
+#MAXGEOM  ASCII
+beginmodelgeom fx_ref 
+node dummy fx_ref 
+  parent NULL 
+endnode
+endmodelgeom fx_ref 
+
+donemodel fx_ref 
+
