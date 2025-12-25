@@ -5,17 +5,24 @@
 
 //------------------------------------------------------------------------------
 
-#include "Tank2007.h"
-
-#include "Resource.h"
+#include "Tank2007.hpp"
 
 //------------------------------------------------------------------------------
 
-class Player : public Resource
+class Gui : public Ogre::Singleton<Gui>
 {
+	private:
+
+		CEGUI::OgreCEGUIRenderer*	mRenderer;
+		CEGUI::System*				mSystem;
+
 	public:
 
-		Player();
+		Gui();
+
+		~Gui();
+
+		bool init();
 };
 
 //------------------------------------------------------------------------------

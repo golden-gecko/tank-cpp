@@ -5,17 +5,21 @@
 
 //------------------------------------------------------------------------------
 
-#include "Tank2007.h"
+#include "Tank2007.hpp"
 
-#include "Player.h"
+#include "ResourceManager.hpp"
+#include "Tank.hpp"
+#include "Wall.hpp"
 
 //------------------------------------------------------------------------------
 
-class PlayerManager : public Ogre::Singleton<PlayerManager>
+class ObjectManager : public ResourceManager<Object>, public Ogre::Singleton<ObjectManager>
 {
 	public:
 
-		Player* create(const std::string& name);
+		void destroy(Object* object);
+
+		void update(float deltaTime);
 };
 
 //------------------------------------------------------------------------------

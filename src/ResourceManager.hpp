@@ -5,24 +5,33 @@
 
 //------------------------------------------------------------------------------
 
-#include "Tank2007.h"
+#include "Tank2007.hpp"
 
 //------------------------------------------------------------------------------
 
-class Gui : public Ogre::Singleton<Gui>
+template <typename T> class ResourceManager
 {
-	private:
+	protected:
 
-		CEGUI::OgreCEGUIRenderer*	mRenderer;
-		CEGUI::System*				mSystem;
+		std::list<T*> mList;
 
 	public:
 
-		Gui();
+		T* create(const std::string& name)
+		{
+			T* t = new T();
 
-		~Gui();
+			mList.push_back(t);
 
-		bool init();
+			return t;
+		}
+
+		void destroy(T* t)
+		{
+			mList.remove(t);
+
+			delete t;
+		}
 };
 
 //------------------------------------------------------------------------------

@@ -1,11 +1,11 @@
 
 //------------------------------------------------------------------------------
 
-#include "Tank2007.h"
+#include "Tank2007.hpp"
 
-#include "Menu.h"
+#include "Menu.hpp"
 
-#include "Multiplayer.h"
+#include "Multiplayer.hpp"
 
 //------------------------------------------------------------------------------
 

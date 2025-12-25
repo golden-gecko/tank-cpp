@@ -2,12 +2,12 @@
 
 //------------------------------------------------------------------------------
 
-#include "Tank2007.h"
+#include "Tank2007.hpp"
 
-#include "Multiplayer.h"
+#include "Multiplayer.hpp"
 
-#include "Console.h"
-#include "Graphics.h"
+#include "Console.hpp"
+#include "Graphics.hpp"
 
 //------------------------------------------------------------------------------
 

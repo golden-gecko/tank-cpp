@@ -5,31 +5,17 @@
 
 //------------------------------------------------------------------------------
 
-#include "Tank2007.h"
+#include "Tank2007.hpp"
+
+#include "Player.hpp"
 
 //------------------------------------------------------------------------------
 
-class Resource
+class PlayerManager : public Ogre::Singleton<PlayerManager>
 {
-	protected:
-
-		std::string mName;
-
 	public:
 
-		Resource(): mName("")
-		{
-		}
-
-		std::string getName()
-		{
-			return mName;
-		}
-
-		void setName(const std::string& name)
-		{
-			mName = name;
-		}
+		Player* create(const std::string& name);
 };
 
 //------------------------------------------------------------------------------

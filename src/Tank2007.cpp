@@ -1,15 +1,15 @@
 
 //------------------------------------------------------------------------------
 
-#include "Tank2007.h"
+#include "Tank2007.hpp"
 
-#include "Console.h"
-#include "Graphics.h"
-#include "Gui.h"
-#include "Menu.h"
-#include "Multiplayer.h"
-#include "ObjectManager.h"
-#include "PlayerManager.h"
+#include "Console.hpp"
+#include "Graphics.hpp"
+#include "Gui.hpp"
+#include "Menu.hpp"
+#include "Multiplayer.hpp"
+#include "ObjectManager.hpp"
+#include "PlayerManager.hpp"
 
 Console			console;
 Graphics		graphics;

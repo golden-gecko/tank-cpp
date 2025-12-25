@@ -5,42 +5,35 @@
 
 //------------------------------------------------------------------------------
 
-#define NOMINMAX
-
-#include <windows.h>
-
-#include <vector>
 #include <string>
+#include <vector>
 
 //------------------------------------------------------------------------------
 // CEGUI
 //------------------------------------------------------------------------------
 
-#include "CEGUI/CEGUI.h"
+#include "CEGUI/CEGUI.hpp"
 
 //------------------------------------------------------------------------------
 // Ogre 3D
 //------------------------------------------------------------------------------
 
-#include "Ogre.h"
-#include "OgreCEGUIRenderer.h"
-
-template <typename T> T* Ogre::Singleton<T>::ms_Singleton = NULL;
+#include <Ogre.hpp>
 
 //------------------------------------------------------------------------------
 // RakNet
 //------------------------------------------------------------------------------
 
-#include "BitStream.h"
-#include "PacketEnumerations.h"
-#include "RakClientInterface.h"
-#include "RakNetworkFactory.h"
-#include "RakServerInterface.h"
+#include "BitStream.hpp"
+#include "PacketEnumerations.hpp"
+#include "RakClientInterface.hpp"
+#include "RakNetworkFactory.hpp"
+#include "RakServerInterface.hpp"
 
 //------------------------------------------------------------------------------
 // TinyXml
 //------------------------------------------------------------------------------
 
-#include "tinyxml.h"
+#include "tinyxml.hpp"
 
 //------------------------------------------------------------------------------

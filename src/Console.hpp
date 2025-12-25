@@ -5,21 +5,27 @@
 
 //------------------------------------------------------------------------------
 
-#include "Tank2007.h"
-
-#include "Object.h"
+#include "Tank2007.hpp"
 
 //------------------------------------------------------------------------------
 
-class Tank : public Object
+class Console : public Ogre::Singleton<Console>
 {
 	private:
 
-		
+		CEGUI::FrameWindow*		mConsole;
+		CEGUI::Listbox*			mConsoleLog;
+		CEGUI::ListboxTextItem*	mItem;
 
 	public:
 
-		
+		Console();
+
+		void init();
+
+		void write(const std::string& msg);
+
+		void toggleVisible();
 };
 
 //------------------------------------------------------------------------------

@@ -5,21 +5,31 @@
 
 //------------------------------------------------------------------------------
 
-#include "Tank2007.h"
-
-#include "ResourceManager.h"
-#include "Tank.h"
-#include "Wall.h"
+#include "Tank2007.hpp"
 
 //------------------------------------------------------------------------------
 
-class ObjectManager : public ResourceManager<Object>, public Ogre::Singleton<ObjectManager>
+class Resource
 {
+	protected:
+
+		std::string mName;
+
 	public:
 
-		void destroy(Object* object);
+		Resource(): mName("")
+		{
+		}
 
-		void update(float deltaTime);
+		std::string getName()
+		{
+			return mName;
+		}
+
+		void setName(const std::string& name)
+		{
+			mName = name;
+		}
 };
 
 //------------------------------------------------------------------------------
